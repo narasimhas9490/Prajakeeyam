@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">ప్రజాకీయం</string>
+    <string name="app_name_latin" translatable="false">Prajakeeyam</string>
+    <string name="tagline">Your village. Your voice.</string>
+
+    <!-- language picker -->
+    <string name="pick_language">Choose language / భాష ఎంచుకోండి</string>
+    <string name="lang_te" translatable="false">తెలుగు</string>
+    <string name="lang_en" translatable="false">English</string>
+
+    <!-- home -->
+    <string name="my_village">My village</string>
+    <string name="choose_village">Choose your village</string>
+    <string name="search_hint">Search village or mandal</string>
+    <string name="browse_by_constituency">Or browse by constituency</string>
+    <string name="district">District</string>
+    <string name="constituency">Constituency</string>
+    <string name="mandal">Mandal</string>
+    <string name="village">Village</string>
+    <string name="change">Change</string>
+    <string name="set_as_my_village">Set as my village</string>
+    <string name="urban_no_villages">Town area: problems are posted at mandal level</string>
+    <string name="no_results">Nothing found. Try another spelling.</string>
+    <string name="villages_count">%d villages</string>
+    <string name="loc_use">Use my location</string>
+    <string name="loc_use_hint">Find my village automatically</string>
+    <string name="loc_searching">Finding your village…</string>
+    <string name="loc_is_this">Is this your village?</string>
+    <string name="loc_yes">Yes, this is it</string>
+    <string name="loc_no">Not this one</string>
+    <string name="loc_mandal_found">Your location is in %s mandal. Pick your village, or use the mandal.</string>
+    <string name="loc_not_found">Could not match your location to a village. Please search below.</string>
+    <string name="loc_off">Location is turned off. Turn it on and try again.</string>
+    <string name="loc_denied">Location permission was not given. You can search below.</string>
+    <string name="loc_open_settings">Open settings</string>
+    <string name="mandals_count">%d mandals</string>
+
+    <!-- feed -->
+    <string name="tab_village">Village</string>
+    <string name="tab_mandal">Mandal</string>
+    <string name="tab_constituency">Constituency</string>
+    <string name="sort_new">New</string>
+    <string name="sort_top">Most supported</string>
+    <string name="sort_top_short">Top</string>
+    <string name="feed_empty">No problems posted here yet. Be the first to speak up.</string>
+    <string name="post_problem">Post a problem</string>
+    <string name="supporters">%d people</string>
+    <string name="comments_count">%d comments</string>
+
+    <!-- statuses -->
+    <string name="status_open">Pending</string>
+    <string name="status_in_progress">In progress</string>
+    <string name="status_resolved">Resolved</string>
+
+    <!-- categories -->
+    <string name="cat_road">Roads</string>
+    <string name="cat_water">Drinking water</string>
+    <string name="cat_electricity">Electricity</string>
+    <string name="cat_drainage">Drainage</string>
+    <string name="cat_health">Health</string>
+    <string name="cat_school">School</string>
+    <string name="cat_ration">Ration</string>
+    <string name="cat_pension">Pension</string>
+    <string name="cat_garbage">Garbage</string>
+    <string name="cat_other">Other</string>
+
+    <!-- new problem -->
+    <string name="new_problem">New problem</string>
+    <string name="field_category">What kind of problem?</string>
+    <string name="field_title">Short title</string>
+    <string name="field_description">Describe the problem</string>
+    <string name="field_location">Where</string>
+    <string name="add_photo">Add photo</string>
+    <string name="remove_photo">Remove photo</string>
+    <string name="submit">Post</string>
+    <string name="posting">Posting…</string>
+    <string name="uploading_photo">Uploading photo…</string>
+    <string name="posted_ok">Posted. Thank you for speaking up!</string>
+    <string name="validation_short">Please write a little more.</string>
+
+    <!-- detail -->
+    <string name="same_problem">I have this problem too</string>
+    <string name="support">Support</string>
+    <string name="supported">Supported</string>
+    <string name="you_supported">You support this</string>
+    <string name="comments">Comments</string>
+    <string name="write_comment">Write a comment</string>
+    <string name="send">Send</string>
+    <string name="report">Report</string>
+    <string name="report_why">Why are you reporting this?</string>
+    <string name="reason_spam">Spam or advertising</string>
+    <string name="reason_abuse">Abusive or hateful</string>
+    <string name="reason_false">False information</string>
+    <string name="reason_other">Something else</string>
+    <string name="reported_thanks">Thanks. We will review it.</string>
+    <string name="block_user">Block this user</string>
+    <string name="blocked_done">User blocked. You will not see their posts.</string>
+    <string name="mark_resolved">Mark as resolved</string>
+    <string name="reopen">Reopen</string>
+    <string name="delete_post">Delete my post</string>
+    <string name="delete_post_confirm">Delete this post?</string>
+    <string name="posted_on">%1$s · %2$s</string>
+
+    <!-- auth / profile -->
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="sign_in_needed">Sign in to post, support or comment.</string>
+    <string name="sign_in_failed">Sign-in did not work. Check that a Google account is on this phone.</string>
+    <string name="sign_out">Sign out</string>
+    <string name="profile">Profile</string>
+    <string name="language">Language</string>
+    <string name="delete_account">Delete my account</string>
+    <string name="delete_account_confirm">This removes your account and hides everything you posted. This cannot be undone.</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="about_independent">Prajakeeyam is an independent, non-partisan civic app. It is not linked to any political party or government.</string>
+    <string name="version">Version %s</string>
+
+    <!-- common -->
+    <string name="server_waking">Server is waking up, please wait…</string>
+    <string name="error_network">No internet, or the server is unreachable.</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="retry">Retry</string>
+    <string name="loading">Loading…</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="more">More</string>
+    <string name="updating_locations">Updating village list…</string>
+</resources>

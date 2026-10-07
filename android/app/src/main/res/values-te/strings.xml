@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagline">మీ ఊరు. మీ గొంతు.</string>
+
+    <string name="pick_language">భాష ఎంచుకోండి / Choose language</string>
+
+    <!-- home -->
+    <string name="my_village">నా ఊరు</string>
+    <string name="choose_village">మీ ఊరిని ఎంచుకోండి</string>
+    <string name="search_hint">ఊరు లేదా మండలం వెతకండి</string>
+    <string name="browse_by_constituency">లేదా నియోజకవర్గం ద్వారా చూడండి</string>
+    <string name="district">జిల్లా</string>
+    <string name="constituency">నియోజకవర్గం</string>
+    <string name="mandal">మండలం</string>
+    <string name="village">గ్రామం</string>
+    <string name="change">మార్చు</string>
+    <string name="set_as_my_village">నా ఊరుగా పెట్టు</string>
+    <string name="urban_no_villages">పట్టణ ప్రాంతం: సమస్యలు మండల స్థాయిలో పోస్ట్ అవుతాయి</string>
+    <string name="no_results">ఏమీ దొరకలేదు. వేరే స్పెల్లింగ్ ప్రయత్నించండి.</string>
+    <string name="villages_count">%d గ్రామాలు</string>
+    <string name="loc_use">నా లొకేషన్ వాడు</string>
+    <string name="loc_use_hint">నా ఊరిని ఆటోమేటిక్‌గా కనుగొను</string>
+    <string name="loc_searching">మీ ఊరిని కనుగొంటున్నాం…</string>
+    <string name="loc_is_this">ఇది మీ ఊరేనా?</string>
+    <string name="loc_yes">అవును, ఇదే</string>
+    <string name="loc_no">ఇది కాదు</string>
+    <string name="loc_mandal_found">మీ లొకేషన్ %s మండలంలో ఉంది. మీ ఊరిని ఎంచుకోండి, లేదా మండలాన్ని వాడండి.</string>
+    <string name="loc_not_found">మీ లొకేషన్‌కు ఊరు దొరకలేదు. దయచేసి కింద వెతకండి.</string>
+    <string name="loc_off">లొకేషన్ ఆఫ్‌లో ఉంది. ఆన్ చేసి మళ్ళీ ప్రయత్నించండి.</string>
+    <string name="loc_denied">లొకేషన్ అనుమతి ఇవ్వలేదు. కింద వెతకవచ్చు.</string>
+    <string name="loc_open_settings">సెట్టింగ్స్ తెరువు</string>
+    <string name="mandals_count">%d మండలాలు</string>
+
+    <!-- feed -->
+    <string name="tab_village">గ్రామం</string>
+    <string name="tab_mandal">మండలం</string>
+    <string name="tab_constituency">నియోజకవర్గం</string>
+    <string name="sort_new">కొత్తవి</string>
+    <string name="sort_top">ఎక్కువ మద్దతు</string>
+    <string name="sort_top_short">టాప్</string>
+    <string name="feed_empty">ఇక్కడ ఇంకా సమస్యలు పోస్ట్ కాలేదు. మీరే మొదట చెప్పండి.</string>
+    <string name="post_problem">సమస్య చెప్పండి</string>
+    <string name="supporters">%d మంది</string>
+    <string name="comments_count">%d వ్యాఖ్యలు</string>
+
+    <!-- statuses -->
+    <string name="status_open">పెండింగ్</string>
+    <string name="status_in_progress">పనిలో ఉంది</string>
+    <string name="status_resolved">పరిష్కారమైంది</string>
+
+    <!-- categories -->
+    <string name="cat_road">రోడ్లు</string>
+    <string name="cat_water">తాగునీరు</string>
+    <string name="cat_electricity">కరెంటు</string>
+    <string name="cat_drainage">డ్రైనేజీ</string>
+    <string name="cat_health">ఆరోగ్యం</string>
+    <string name="cat_school">బడి</string>
+    <string name="cat_ration">రేషన్</string>
+    <string name="cat_pension">పింఛను</string>
+    <string name="cat_garbage">చెత్త</string>
+    <string name="cat_other">ఇతర</string>
+
+    <!-- new problem -->
+    <string name="new_problem">కొత్త సమస్య</string>
+    <string name="field_category">ఏ రకమైన సమస్య?</string>
+    <string name="field_title">చిన్న శీర్షిక</string>
+    <string name="field_description">సమస్యను వివరించండి</string>
+    <string name="field_location">ఎక్కడ</string>
+    <string name="add_photo">ఫోటో జోడించండి</string>
+    <string name="remove_photo">ఫోటో తీసేయండి</string>
+    <string name="submit">పోస్ట్ చేయండి</string>
+    <string name="posting">పోస్ట్ అవుతోంది…</string>
+    <string name="uploading_photo">ఫోటో అప్‌లోడ్ అవుతోంది…</string>
+    <string name="posted_ok">పోస్ట్ అయింది. గొంతు విప్పినందుకు ధన్యవాదాలు!</string>
+    <string name="validation_short">దయచేసి ఇంకొంచెం రాయండి.</string>
+
+    <!-- detail -->
+    <string name="same_problem">నాకూ ఇదే సమస్య</string>
+    <string name="support">మద్దతు</string>
+    <string name="supported">మద్దతు ఇచ్చారు</string>
+    <string name="you_supported">మీరు మద్దతు ఇచ్చారు</string>
+    <string name="comments">వ్యాఖ్యలు</string>
+    <string name="write_comment">వ్యాఖ్య రాయండి</string>
+    <string name="send">పంపు</string>
+    <string name="report">ఫిర్యాదు</string>
+    <string name="report_why">ఎందుకు ఫిర్యాదు చేస్తున్నారు?</string>
+    <string name="reason_spam">స్పామ్ లేదా ప్రకటన</string>
+    <string name="reason_abuse">దూషణ లేదా ద్వేషం</string>
+    <string name="reason_false">తప్పుడు సమాచారం</string>
+    <string name="reason_other">ఇంకేదో</string>
+    <string name="reported_thanks">ధన్యవాదాలు. మేము పరిశీలిస్తాము.</string>
+    <string name="block_user">ఈ వ్యక్తిని బ్లాక్ చేయండి</string>
+    <string name="blocked_done">బ్లాక్ చేశారు. వారి పోస్టులు మీకు కనిపించవు.</string>
+    <string name="mark_resolved">పరిష్కారమైందని గుర్తించు</string>
+    <string name="reopen">మళ్ళీ తెరువు</string>
+    <string name="delete_post">నా పోస్ట్ తొలగించు</string>
+    <string name="delete_post_confirm">ఈ పోస్ట్ తొలగించాలా?</string>
+    <string name="posted_on">%1$s · %2$s</string>
+
+    <!-- auth / profile -->
+    <string name="sign_in_google">Google తో సైన్ ఇన్ చేయండి</string>
+    <string name="sign_in_needed">పోస్ట్ చేయడానికి, మద్దతు ఇవ్వడానికి లేదా వ్యాఖ్య రాయడానికి సైన్ ఇన్ చేయండి.</string>
+    <string name="sign_in_failed">సైన్ ఇన్ కాలేదు. ఈ ఫోన్‌లో Google ఖాతా ఉందో చూడండి.</string>
+    <string name="sign_out">సైన్ అవుట్</string>
+    <string name="profile">ప్రొఫైల్</string>
+    <string name="language">భాష</string>
+    <string name="delete_account">నా ఖాతాను తొలగించు</string>
+    <string name="delete_account_confirm">ఇది మీ ఖాతాను తొలగించి, మీరు పోస్ట్ చేసినవన్నీ దాచేస్తుంది. దీన్ని వెనక్కి తీసుకోలేరు.</string>
+    <string name="privacy_policy">గోప్యతా విధానం</string>
+    <string name="about_independent">ప్రజాకీయం ఒక స్వతంత్ర, పార్టీలకు అతీతమైన పౌర యాప్. ఇది ఏ రాజకీయ పార్టీకి లేదా ప్రభుత్వానికి చెందినది కాదు.</string>
+    <string name="version">వెర్షన్ %s</string>
+
+    <!-- common -->
+    <string name="server_waking">సర్వర్ మేల్కొంటోంది, కొంచెం ఆగండి…</string>
+    <string name="error_network">ఇంటర్నెట్ లేదు, లేదా సర్వర్ అందుబాటులో లేదు.</string>
+    <string name="error_generic">ఏదో తప్పు జరిగింది. మళ్ళీ ప్రయత్నించండి.</string>
+    <string name="retry">మళ్ళీ ప్రయత్నించు</string>
+    <string name="loading">లోడ్ అవుతోంది…</string>
+    <string name="back">వెనక్కి</string>
+    <string name="cancel">రద్దు</string>
+    <string name="ok">సరే</string>
+    <string name="delete">తొలగించు</string>
+    <string name="search">వెతుకు</string>
+    <string name="more">ఇంకా</string>
+    <string name="updating_locations">గ్రామాల జాబితా అప్‌డేట్ అవుతోంది…</string>
+</resources>

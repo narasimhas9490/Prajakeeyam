@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Prajakeeyam" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowBackground">#F2F2F7</item>
+    </style>
+
+    <!-- Shown by the system while the process starts; swapped for Theme.Prajakeeyam by installSplashScreen(). -->
+    <style name="Theme.Prajakeeyam.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#007AFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="windowSplashScreenAnimationDuration">400</item>
+        <item name="postSplashScreenTheme">@style/Theme.Prajakeeyam</item>
+    </style>
+</resources>

@@ -1,0 +1,322 @@
+kind,key,id
+district,alluri_sitharama_raju,1
+district,anakapalli,2
+district,ananthapuramu,3
+district,annamayya,4
+district,bapatla,5
+district,chittoor,6
+district,dr_b_r_ambedkar_konaseema,7
+district,east_godavari,8
+district,eluru,9
+district,guntur,10
+district,kakinada,11
+district,krishna,12
+district,kurnool,13
+district,nandyal,14
+district,ntr,15
+district,palnadu,16
+district,parvathipuram_manyam,17
+district,prakasam,18
+district,sri_potti_sriramulu_nellore,19
+district,sri_sathya_sai,20
+district,srikakulam,21
+district,tirupati,22
+district,visakhapatnam,23
+district,vizianagaram,24
+district,west_godavari,25
+district,ysr_kadapa,26
+mandal,4:L. N. Peta,900000
+mandal,7:G.Sigadam,900001
+mandal,12:Seethanagaram,900002
+mandal,20:Bheemili,900003
+mandal,20:part,900004
+mandal,27:Devarapalli,900005
+mandal,31:Anakapalle dist,900006
+mandal,31:Visakhaptnam dist,900007
+mandal,32:Elamanchili,900008
+mandal,37:Kothapalle,900009
+mandal,38:Kakinada,900010
+mandal,41:Kakinada,900011
+mandal,42:Ramachandrapuram,900012
+mandal,43:Island Polavaram,900013
+mandal,49:Seethanagaram,900014
+mandal,53:Gangavaram,900015
+mandal,57:Palakollu,900016
+mandal,57:Yelamanchili,900017
+mandal,58:Narsapuram,900018
+mandal,63:Unguturu,900019
+mandal,66:Devarapalli,900020
+mandal,67:Velerupadu,900021
+mandal,74:Gudur,900022
+mandal,82:Mylavaram,900023
+mandal,90:Cherukupalle,900024
+mandal,96:Chilakaluripet,900025
+mandal,96:Edlapudu,900026
+mandal,97:Rompicherla,900027
+mandal,98:Rajupalem,900028
+mandal,99:Savalyapuram,900029
+mandal,101:Veldurthi,900030
+mandal,105:Korsipadu,900031
+mandal,111:Markapuram,900032
+mandal,115:Atmakur,900033
+mandal,120:Gudur,900034
+mandal,123:Kondapuram,900035
+mandal,125:Siddavatam,900036
+mandal,127:Railway Koduru,900037
+mandal,131:Mylavaram,900038
+mandal,131:Kondapuram,900039
+mandal,132:Rajupalem,900040
+mandal,135:Srisailam,900041
+mandal,135:Atmakur,900042
+mandal,136:J. Bungalow,900043
+mandal,136:Kothapalle,900044
+mandal,"138:Gadivemula , Nandyal district",900045
+mandal,"138:Kallur , Kurnool district",900046
+mandal,"138:Orvakal , Kurnool district",900047
+mandal,"138:Panyam , Nandyal district",900048
+mandal,139:Nandyal Urban,900049
+mandal,139:Nandyal Rural(new),900050
+mandal,142:Veldurthi,900051
+mandal,142:Maddikera,900052
+mandal,"143:Gudur, Kurnool",900053
+mandal,146:Adoni Urban,900054
+mandal,146:Adoni Rural,900055
+mandal,152:B.K. Samudram,900056
+mandal,154:Brahmsamudram,900057
+mandal,154:Kundrupi,900058
+mandal,155:Anantapur Rural,900059
+mandal,155:Atmakur,900060
+mandal,155:C.K.Palli,900061
+mandal,159:O.D. Cheruvu,900062
+mandal,161:Nambulapulakunta,900063
+mandal,165:Rompicherla,900064
+mandal,166:Ramachandrapuram,900065
+mandal,174:Gangavaram,900066
+mandal,21:urban,900067
+mandal,22:urban,900068
+mandal,23:urban,900069
+mandal,24:urban,900070
+mandal,36:urban,900071
+mandal,46:urban,900072
+mandal,50:urban,900073
+mandal,59:urban,900074
+mandal,65:urban,900075
+mandal,71:urban,900076
+mandal,75:urban,900077
+mandal,80:urban,900078
+mandal,81:urban,900079
+mandal,93:urban,900080
+mandal,116:urban,900081
+mandal,117:urban,900082
+mandal,137:urban,900083
+mandal,151:urban,900084
+mandal,153:urban,900085
+mandal,33:Nakkapalli,900086
+mandal,93:Guntur (except M.Corp.),900087
+mandal,128:Lakkireddipalli,900088
+mandal,95:urban,900089
+mandal,94:urban,900090
+village,900002:Bobbillanka,9000000
+village,900002:Mulakallanka,9000001
+village,900002:Mirthipadu,9000002
+village,900002:Hundeswarapuram,9000003
+village,900002:Jalimudi,9000004
+village,900002:Katavaram,9000005
+village,900002:Munikudali,9000006
+village,900002:Rajampeta,9000007
+village,900002:Vedullapalli,9000008
+village,900002:Inugantivari Peta,9000009
+village,900002:Muggulla,9000010
+village,900002:Kunavaram,9000011
+village,900002:Koti Kesavaram,9000012
+village,900002:Nallagonda,9000013
+village,900002:Rapaka,9000014
+village,900002:Raghudevapuram,9000015
+village,900002:Seethanagaram,9000016
+village,900002:Chinakondepudi,9000017
+village,900002:Nagampalle,9000018
+village,900002:Chipurapalli,9000019
+village,900002:Singavaram,9000020
+village,900002:Vangalapudi,9000021
+village,900002:Ramachandrapuram,9000022
+village,900002:Purushothapatnam,9000023
+village,900014:Bobbillanka,9000024
+village,900014:Mulakallanka,9000025
+village,900014:Mirthipadu,9000026
+village,900014:Hundeswarapuram,9000027
+village,900014:Jalimudi,9000028
+village,900014:Katavaram,9000029
+village,900014:Munikudali,9000030
+village,900014:Rajampeta,9000031
+village,900014:Vedullapalli,9000032
+village,900014:Inugantivari Peta,9000033
+village,900014:Muggulla,9000034
+village,900014:Kunavaram,9000035
+village,900014:Koti Kesavaram,9000036
+village,900014:Nallagonda,9000037
+village,900014:Rapaka,9000038
+village,900014:Raghudevapuram,9000039
+village,900014:Seethanagaram,9000040
+village,900014:Chinakondepudi,9000041
+village,900014:Nagampalle,9000042
+village,900014:Chipurapalli,9000043
+village,900014:Singavaram,9000044
+village,900014:Vangalapudi,9000045
+village,900014:Ramachandrapuram,9000046
+village,900014:Purushothapatnam,9000047
+village,900016:Agarru,9000048
+village,900016:Aratlakatla,9000049
+village,900016:Ballipadu,9000050
+village,900016:Chandaparru,9000051
+village,900016:Chintaparru,9000052
+village,900016:Dagguluru,9000053
+village,900016:Digamarru,9000054
+village,900016:Gorintada,9000055
+village,900016:Kapavaram,9000056
+village,900016:Lankalakoderu,9000057
+village,900016:Palakollu (M),9000058
+village,900016:Palakollu Rural (OG),9000059
+village,900016:Palamuru,9000060
+village,900016:Pedamamidipalle,9000061
+village,900016:Poolapalli (OG),9000062
+village,900016:Sivadevunichikkala,9000063
+village,900016:Tillapudi,9000064
+village,900016:Ullamparru (OG),9000065
+village,900016:Varidhanam,9000066
+village,900016:Velivela,9000067
+village,900017:Abbirajupalem,9000068
+village,900017:Aryapeta,9000069
+village,900017:Burugupalle,9000070
+village,900017:Badava,9000071
+village,900017:Chinchinada,9000072
+village,900017:Chinthadibba,9000073
+village,900017:Doddipatla,9000074
+village,900017:Gumparru,9000075
+village,900017:Gangadapalem,9000076
+village,900017:Ilapakurru,9000077
+village,900017:Kalagampudi,9000078
+village,900017:Kaza East,9000079
+village,900017:Kaza West,9000080
+village,900017:Kattukaluva,9000081
+village,900017:KS Palem,9000082
+village,900017:Kanakayalanka,9000083
+village,900017:Kambotlapalem,9000084
+village,900017:Lakshmipalem,9000085
+village,900017:Medapadu,9000086
+village,900017:Matlapalem,9000087
+village,900017:Neredumilli,9000088
+village,900017:Narnimeraka,9000089
+village,900017:Penumarru,9000090
+village,900017:Pedalanka,9000091
+village,900017:Siragalapalle,9000092
+village,900017:Utada,9000093
+village,900017:Vaddilanka,9000094
+village,900017:Yelamanchili East,9000095
+village,900017:Yelamanchili West,9000096
+village,900017:Yenuguvanilanka,9000097
+village,900019:Dontavaram,9000098
+village,900019:Gopinadhapatnam,9000099
+village,900019:Kakarlamudi,9000100
+village,900019:Nallamadu,9000101
+village,900019:Ravulaparru,9000102
+village,900019:Tallapuram,9000103
+village,900019:Venkatadriapparaopuram,9000104
+village,900021:Chigurumamidi,9000105
+village,900021:Gundlavai,9000106
+village,900021:Kacharam,9000107
+village,900021:Kakisnoor,9000108
+village,900021:Katukur,9000109
+village,900021:Koida,9000110
+village,900021:Kothuru,9000111
+village,900021:Koyamadaram,9000112
+village,900021:Lachapeta,9000113
+village,900021:Medapalle,9000114
+village,900021:Narlavaram,9000115
+village,900021:Parentapalle,9000116
+village,900021:Rallapudi,9000117
+village,900021:Ramavaram,9000118
+village,900021:Repakagommu,9000119
+village,900021:Rudramkota,9000120
+village,900021:Siddaram,9000121
+village,900021:Tekupalle,9000122
+village,900021:Tekuru,9000123
+village,900021:Thatukur,9000124
+village,900021:Tirumalapuram,9000125
+village,900023:Chandragudem,9000126
+village,900023:Chandrala,9000127
+village,900023:Dasullapalem,9000128
+village,900023:Ganapavaram,9000129
+village,900023:Jangalapalli,9000130
+village,900023:Kanimerla,9000131
+village,900023:Keerthirayanigudem,9000132
+village,900023:Morusumilli,9000133
+village,900023:Mulakalapanta,9000134
+village,900023:Mylavaram,9000135
+village,900023:Pondugula,9000136
+village,900023:Pulluru,9000137
+village,900023:Sabjapadu,9000138
+village,900023:T.Gannavaram,9000139
+village,900023:Tholukodu,9000140
+village,900023:Vedurubeedem,9000141
+village,900023:Velvadam,9000142
+village,900023:Badava,9000143
+village,900023:kothagudem,9000144
+village,900025:Boppudi,9000145
+village,900025:Chinna Pasumarru,9000146
+village,900025:Edavalli,9000147
+village,900025:Gottipadu,9000148
+village,900025:Govindapuram,9000149
+village,900025:Kanthetivari Khandrika,9000150
+village,900025:Kavuru,9000151
+village,900025:Kukkapallevaripalem,9000152
+village,900025:Manukondavaripalem,9000153
+village,900025:Murikipudi,9000154
+village,900025:Pasumarru (R),9000155
+village,900025:Pothavaram,9000156
+village,900025:Rajapeta,9000157
+village,900025:Thatapudi,9000158
+village,900025:Veluru,9000159
+village,900038:Chandragudem,9000160
+village,900038:Chandrala,9000161
+village,900038:Dasullapalem,9000162
+village,900038:Ganapavaram,9000163
+village,900038:Jangalapalli,9000164
+village,900038:Kanimerla,9000165
+village,900038:Keerthirayanigudem,9000166
+village,900038:Morusumilli,9000167
+village,900038:Mulakalapanta,9000168
+village,900038:Mylavaram,9000169
+village,900038:Pondugula,9000170
+village,900038:Pulluru,9000171
+village,900038:Sabjapadu,9000172
+village,900038:T.Gannavaram,9000173
+village,900038:Tholukodu,9000174
+village,900038:Vedurubeedem,9000175
+village,900038:Velvadam,9000176
+village,900038:Badava,9000177
+village,900038:kothagudem,9000178
+village,900049:Ayyalur,9000179
+village,900049:Billalapuram,9000180
+village,900049:Kothapalli,9000181
+village,900049:Moolasagaram,9000182
+village,900049:Nandyal,9000183
+village,900049:Noonepalli,9000184
+village,900049:Udumalpuram,9000185
+village,900059:Alamuru,9000186
+village,900059:Chiyyedu,9000187
+village,900059:Gollapalli,9000188
+village,900059:Itikalapalli,9000189
+village,900059:Jangalapalli,9000190
+village,900059:Kakkalapalli,9000191
+village,900059:Kamarupalli,9000192
+village,900059:Kandukur,9000193
+village,900059:Katiganigakaluva,9000194
+village,900059:Kodimi,9000195
+village,900059:Kurugunta,9000196
+village,900059:Mannila,9000197
+village,900059:Papampeta Part,9000198
+village,900059:Rachanapalli,9000199
+village,900059:Sajjalakaluva,9000200
+village,900059:Somaladoddi,9000201
+village,900059:Taticherla,9000202
+village,900059:Upparapalli,9000203

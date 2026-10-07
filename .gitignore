@@ -1,0 +1,24 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+backend/*.db
+backend/.env
+.pytest_cache/
+
+# Data pipeline caches (re-downloadable)
+data/raw/
+
+# Android
+android/.gradle/
+android/build/
+android/**/build/
+android/local.properties
+android/keystore.properties
+android/.kotlin/
+*.jks
+*.keystore
+*.apks
+.idea/
+*.iml
+.DS_Store
