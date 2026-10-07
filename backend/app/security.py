@@ -1,4 +1,4 @@
-"""Google ID-token verification and our own JWT issuing."""
+"""Token verification (Firebase ID tokens, raw Google ID tokens) and our own JWT issuing."""
 from datetime import datetime, timedelta, timezone
 
 import jwt
@@ -8,6 +8,21 @@ from google.oauth2 import id_token as google_id_token
 from .config import settings
 
 GOOGLE_ISSUERS = {"accounts.google.com", "https://accounts.google.com"}
+
+
+def verify_firebase_id_token(token: str) -> dict:
+    """Return the Firebase claims (sub/uid, email, name, picture...). Raises ValueError when invalid."""
+    project = settings.firebase_project_id
+    if not project:
+        raise ValueError("FIREBASE_PROJECT_ID is not configured on the server")
+    claims = google_id_token.verify_firebase_token(
+        token, google_requests.Request(), audience=project, clock_skew_in_seconds=10
+    )
+    if claims.get("iss") != f"https://securetoken.google.com/{project}":
+        raise ValueError("unexpected token issuer")
+    if not (claims.get("sub") or claims.get("user_id")):
+        raise ValueError("token has no subject")
+    return claims
 
 
 def verify_google_id_token(token: str) -> dict:

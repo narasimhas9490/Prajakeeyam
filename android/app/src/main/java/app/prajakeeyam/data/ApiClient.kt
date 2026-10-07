@@ -68,6 +68,8 @@ class ApiClient(baseUrl: String, private val client: OkHttpClient, private val p
     // ------------------------------------------------------------------ auth / me
     suspend fun googleLogin(idToken: String): AuthResult = parseAuth(postJson("/auth/google", JSONObject().put("id_token", idToken)))
 
+    suspend fun firebaseLogin(idToken: String): AuthResult = parseAuth(postJson("/auth/firebase", JSONObject().put("id_token", idToken)))
+
     suspend fun devLogin(sub: String, name: String): AuthResult =
         parseAuth(postJson("/auth/dev", JSONObject().put("sub", sub).put("name", name)))
 

@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     jwt_secret: str = "dev-secret-change-me"
     jwt_days: int = 90
     google_web_client_id: str = ""
+    firebase_project_id: str = ""
     cloudinary_cloud_name: str = ""
     admin_emails: str = ""  # comma separated
     dev_fake_auth: bool = False

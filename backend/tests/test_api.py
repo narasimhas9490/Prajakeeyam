@@ -136,3 +136,25 @@ def test_dev_login_disabled_in_production(client, monkeypatch):
     from app import config
     monkeypatch.setattr(config.settings, "env", "production")
     assert client.post("/auth/dev", json={"sub": "x"}).status_code == 404
+
+
+def test_firebase_login(client, monkeypatch):
+    from app import security
+    monkeypatch.setattr(security, "verify_firebase_id_token", lambda tok: {"sub": "uid123", "email": "fb@example.com", "name": "Firebase User", "picture": None})
+    r = client.post("/auth/firebase", json={"id_token": "x" * 40})
+    assert r.status_code == 200, r.text
+    assert r.json()["user"]["name"] == "Firebase User"
+    me = client.get("/me", headers={"Authorization": f"Bearer {r.json()['access_token']}"}).json()
+    assert me["email"] == "fb@example.com"
+    again = client.post("/auth/firebase", json={"id_token": "x" * 40}).json()
+    assert again["user"]["id"] == r.json()["user"]["id"]  # same Firebase uid -> same account
+
+
+def test_firebase_login_rejects_bad_token(client, monkeypatch):
+    from app import security
+
+    def boom(tok):
+        raise ValueError("bad token")
+
+    monkeypatch.setattr(security, "verify_firebase_id_token", boom)
+    assert client.post("/auth/firebase", json={"id_token": "x" * 40}).status_code == 401

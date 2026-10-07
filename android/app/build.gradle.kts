@@ -1,3 +1,4 @@
+import groovy.json.JsonSlurper
 import java.util.Properties
 
 plugins {
@@ -8,25 +9,56 @@ plugins {
 fun prop(name: String, default: String = ""): String = providers.gradleProperty(name).orElse(default).get()
 fun str(value: String) = "\"" + value.replace("\\", "\\\\").replace("\"", "\\\"") + "\""
 
+val appId = prop("APP_ID", "com.prajakeeyam")
+
+/** Firebase / Google Sign-In config read from app/google-services.json (no google-services Gradle plugin needed). */
+data class FirebaseCfg(val projectId: String, val appId: String, val apiKey: String, val webClientId: String)
+
+@Suppress("UNCHECKED_CAST")
+val firebaseCfg: FirebaseCfg = run {
+    val file = project.file("google-services.json")
+    if (!file.exists()) {
+        logger.warn("google-services.json not found: Google Sign-In will be unavailable in this build")
+        return@run FirebaseCfg("", "", "", "")
+    }
+    val root = JsonSlurper().parse(file) as Map<String, Any?>
+    val projectInfo = root["project_info"] as Map<String, Any?>
+    val clients = root["client"] as List<Map<String, Any?>>
+    val client = clients.firstOrNull {
+        ((it["client_info"] as Map<String, Any?>)["android_client_info"] as Map<String, Any?>)["package_name"] == appId
+    } ?: error("google-services.json has no Android app with package $appId")
+    val info = client["client_info"] as Map<String, Any?>
+    val web = (client["oauth_client"] as? List<Map<String, Any?>>)
+        ?.firstOrNull { (it["client_type"] as? Number)?.toInt() == 3 }?.get("client_id") as? String
+    val apiKey = (client["api_key"] as? List<Map<String, Any?>>)?.firstOrNull()?.get("current_key") as? String
+    if (web.isNullOrBlank()) {
+        logger.warn("google-services.json has no web OAuth client: enable the Google provider in Firebase Authentication, add the SHA-1 fingerprints, and re-download the file")
+    }
+    FirebaseCfg(projectInfo["project_id"] as String, info["mobilesdk_app_id"] as String, apiKey ?: "", web ?: "")
+}
+
 android {
     namespace = "app.prajakeeyam"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = prop("APP_ID", "in.prajakeeyam.app")
+        applicationId = appId
         minSdk = 24
         targetSdk = 36
         versionCode = 1
         versionName = "0.1.0"
 
-        buildConfigField("String", "GOOGLE_WEB_CLIENT_ID", str(prop("GOOGLE_WEB_CLIENT_ID")))
+        buildConfigField("String", "GOOGLE_WEB_CLIENT_ID", str(prop("GOOGLE_WEB_CLIENT_ID").ifBlank { firebaseCfg.webClientId }))
+        buildConfigField("String", "FIREBASE_PROJECT_ID", str(firebaseCfg.projectId))
+        buildConfigField("String", "FIREBASE_APP_ID", str(firebaseCfg.appId))
+        buildConfigField("String", "FIREBASE_API_KEY", str(firebaseCfg.apiKey))
         buildConfigField("String", "CLOUDINARY_CLOUD_NAME", str(prop("CLOUDINARY_CLOUD_NAME")))
         buildConfigField("String", "CLOUDINARY_UPLOAD_PRESET", str(prop("CLOUDINARY_UPLOAD_PRESET", "problems")))
-        buildConfigField("String", "PRIVACY_URL", str(prop("PRIVACY_URL", "https://example.github.io/prajakeeyam/privacy.html")))
+        buildConfigField("String", "PRIVACY_URL", str(prop("PRIVACY_URL", "https://narasimhas9490.github.io/Prajakeeyam/privacy.html")))
         vectorDrawables.useSupportLibrary = true
     }
 
-    // Optional release signing: android/keystore.properties (git-ignored) with
+    // Release signing: android/keystore.properties (git-ignored) with
     // storeFile=..., storePassword=..., keyAlias=..., keyPassword=...
     val keystoreProps = rootProject.file("keystore.properties")
     if (keystoreProps.exists()) {
@@ -95,6 +127,8 @@ dependencies {
     implementation(libs.androidx.credentials)
     implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth)
     implementation(libs.okhttp)
     implementation(libs.kotlinx.coroutines.android)
 }

@@ -10,9 +10,9 @@ services:
     healthCheckPath: /health
     envVars:
       - key: ENV
-        sync: false   # 'staging' while testing without Google OAuth, then 'production'
-      - key: DEV_FAKE_AUTH
-        sync: false   # '1' only while ENV=staging; leave empty in production
+        value: production
+      - key: FIREBASE_PROJECT_ID
+        value: prajakeeyam-4421a
       - key: PYTHON_VERSION
         value: 3.12.11
       - key: DATABASE_URL
