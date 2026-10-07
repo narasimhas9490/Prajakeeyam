@@ -10,7 +10,9 @@ services:
     healthCheckPath: /health
     envVars:
       - key: ENV
-        value: production
+        sync: false   # 'staging' while testing without Google OAuth, then 'production'
+      - key: DEV_FAKE_AUTH
+        sync: false   # '1' only while ENV=staging; leave empty in production
       - key: PYTHON_VERSION
         value: 3.12.11
       - key: DATABASE_URL
