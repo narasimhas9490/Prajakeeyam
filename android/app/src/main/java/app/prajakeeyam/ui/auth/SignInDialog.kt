@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import app.prajakeeyam.R
+import app.prajakeeyam.auth.SignInNotConfigured
 import app.prajakeeyam.data.ApiException
 import app.prajakeeyam.ui.rememberContainer
 import kotlinx.coroutines.launch
@@ -32,6 +33,7 @@ fun SignInDialog(onDismiss: () -> Unit, onSignedIn: () -> Unit) {
     var busy by remember { mutableStateOf(false) }
     var error by remember { mutableStateOf<String?>(null) }
     val failedText = stringResource(R.string.sign_in_failed)
+    val notConfiguredText = stringResource(R.string.sign_in_not_configured)
 
     AlertDialog(
         onDismissRequest = { if (!busy) onDismiss() },
@@ -53,6 +55,8 @@ fun SignInDialog(onDismiss: () -> Unit, onSignedIn: () -> Unit) {
                     try {
                         container.auth.signIn(activity!!)
                         onSignedIn()
+                    } catch (e: SignInNotConfigured) {
+                        error = notConfiguredText
                     } catch (e: ApiException) {
                         error = e.message
                     } catch (e: Exception) {

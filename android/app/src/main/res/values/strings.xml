@@ -106,6 +106,7 @@
     <string name="sign_in_google">Sign in with Google</string>
     <string name="sign_in_needed">Sign in to post, support or comment.</string>
     <string name="sign_in_failed">Sign-in did not work. Check that a Google account is on this phone.</string>
+    <string name="sign_in_not_configured">Google Sign-In is not set up for this app yet. (Developer: enable the Google provider in Firebase, add the SHA-1 fingerprints and rebuild.)</string>
     <string name="sign_out">Sign out</string>
     <string name="profile">Profile</string>
     <string name="language">Language</string>

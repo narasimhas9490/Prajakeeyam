@@ -101,6 +101,7 @@
     <string name="sign_in_google">Google తో సైన్ ఇన్ చేయండి</string>
     <string name="sign_in_needed">పోస్ట్ చేయడానికి, మద్దతు ఇవ్వడానికి లేదా వ్యాఖ్య రాయడానికి సైన్ ఇన్ చేయండి.</string>
     <string name="sign_in_failed">సైన్ ఇన్ కాలేదు. ఈ ఫోన్‌లో Google ఖాతా ఉందో చూడండి.</string>
+    <string name="sign_in_not_configured">ఈ యాప్‌లో Google సైన్ ఇన్ ఇంకా సెటప్ కాలేదు. (డెవలపర్: Firebaseలో Google ప్రొవైడర్ ఆన్ చేసి, SHA-1 జోడించి, మళ్ళీ బిల్డ్ చేయండి.)</string>
     <string name="sign_out">సైన్ అవుట్</string>
     <string name="profile">ప్రొఫైల్</string>
     <string name="language">భాష</string>

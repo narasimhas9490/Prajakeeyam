@@ -46,10 +46,14 @@ class AuthManager(private val api: ApiClient, private val prefs: Prefs) {
             val firebaseToken = firebaseUser.getIdToken(true).await().token ?: throw IllegalStateException("No Firebase ID token")
             api.firebaseLogin(firebaseToken)
         } else if (BuildConfig.DEBUG) {
-            // Debug builds without Firebase config: backend dev login (only works when the server allows it).
-            api.devLogin(deviceSub(activity), Build.MODEL ?: "Dev User")
+            // Debug builds without Firebase config: backend dev login (only honoured by a dev server).
+            try {
+                api.devLogin(deviceSub(activity), Build.MODEL ?: "Dev User")
+            } catch (e: ApiException) {
+                if (e.code == 404) throw SignInNotConfigured() else throw e
+            }
         } else {
-            throw IllegalStateException("Google Sign-In is not configured in this build")
+            throw SignInNotConfigured()
         }
         prefs.token = result.token
         prefs.user = result.user
@@ -104,6 +108,9 @@ class AuthManager(private val api: ApiClient, private val prefs: Prefs) {
     private fun deviceSub(activity: Activity): String =
         Settings.Secure.getString(activity.contentResolver, Settings.Secure.ANDROID_ID) ?: "emulator"
 }
+
+/** Google Sign-In is not set up: google-services.json has no web OAuth client (enable the Google provider in Firebase). */
+class SignInNotConfigured : IllegalStateException("Google Sign-In is not configured")
 
 /** Minimal Task -> coroutine bridge (avoids the kotlinx-coroutines-play-services dependency). */
 private suspend fun <T> Task<T>.await(): T = suspendCancellableCoroutine { cont ->
