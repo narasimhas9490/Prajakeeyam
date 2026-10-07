@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: prajakeeyam-api
+    name: prajakeeyam
     runtime: python
     region: singapore
     plan: free

@@ -78,7 +78,7 @@ android {
             buildConfigField("String", "API_BASE_URL", str(prop("API_BASE_URL_DEBUG", "http://10.0.2.2:8000")))
         }
         release {
-            buildConfigField("String", "API_BASE_URL", str(prop("API_BASE_URL_RELEASE", "https://prajakeeyam-api.onrender.com")))
+            buildConfigField("String", "API_BASE_URL", str(prop("API_BASE_URL_RELEASE", "https://prajakeeyam.onrender.com")))
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
